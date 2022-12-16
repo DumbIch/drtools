@@ -3,12 +3,12 @@ package ru.knpp.dumdumbich.drtools.ui
 
 import javafx.application.Application
 import ru.knpp.dumdumbich.drtools.ui.base.Styles
-import ru.knpp.dumdumbich.drtools.ui.common.CommonWorkspace
+import ru.knpp.dumdumbich.drtools.ui.main.MainWorkspace
 import tornadofx.*
 
 
-class DrToolsApp : App() {
-    override val primaryView = CommonWorkspace::class
+class DrToolsApp : App(MainWorkspace::class) {
+//    override val primaryView = MainWorkspace::class
 
     init {
         importStylesheet(Styles::class)
